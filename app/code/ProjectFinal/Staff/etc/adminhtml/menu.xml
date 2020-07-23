@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="ProjectFinal_Staff::pos_staff"
+             title="Staff"
+             module="ProjectFinal_Staff"
+             sortOrder="30"
+             resource="ProjectFinal_Staff::pos_staff"/>
+        <add
+            id="ProjectFinal_Staff::staff"
+            title="Manage Staffs"
+            module="ProjectFinal_Staff"
+            sortOrder="10"
+            parent="ProjectFinal_Staff::pos_staff"
+            action="staff/index/index"
+            resource="ProjectFinal_Staff::staff"
+        /><!--        <add id="ProjectFinal_Staff::edit_create_staff" title="Edit and Create Staff" module="ProjectFinal_Staff" sortOrder="11" parent="ProjectFinal_Staff::pos_staff" action="staff/index/edit" resource="ProjectFinal_Staff::edit_create_staff"/>-->
+    </menu>
+</config>

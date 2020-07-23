@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="ProjectFinal\Staff\Api\Data\StaffInterface" type="ProjectFinal\Staff\Model\Staff" />
+
+    <virtualType name="ProjectFinal\Staff\Model\ResourceModel\Staff\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">pos_staff</argument>
+            <argument name="resourceModel" xsi:type="string">ProjectFinal\Staff\Model\ResourceModel\Staff</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="staff_list_data_source" xsi:type="string">ProjectFinal\Staff\Model\ResourceModel\Staff\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

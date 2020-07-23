@@ -1,0 +1,5 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magestore\ServiceContractApi\Api\StudentRepositoryInterface" type="Magestore\ServiceContractApi\Model\StudentRepository"/>
+    <preference for="Magestore\ServiceContractApi\Api\Data\StudentInterface" type="Magestore\ServiceContractApi\Model\Student"/>
+    <preference for="Magestore\ServiceContractApi\Api\Data\StudentSearchResultsInterface" type="Magestore\ServiceContractApi\Model\StudentSearchResult"/>
+</config>

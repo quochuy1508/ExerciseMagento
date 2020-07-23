@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @var \Magestore\Layout\Block\Product\Display $block
+ */
+
+//echo $block->sayHello();
+if ($currentProduct = $block->getCurrentProduct()) {
+//    echo $currentProduct->getId()."<br/>";
+    foreach ($currentProduct->getCategoryIds() as $categoryId) {
+//        echo $categoryId." - ";
+        echo $block->getCurrentCategory($categoryId)."<br/>";
+    }
+}

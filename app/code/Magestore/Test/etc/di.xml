@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © Devendra. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magestore\Test\Api\DevpromoRepositoryInterface" type="Magestore\Test\Model\DevpromoRepository"/>
+    <preference for="Magestore\Test\Api\Data\DevpromoInterface" type="Magestore\Test\Model\Devpromo"/>
+    <preference for="Magestore\Test\Api\Data\DevpromoSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+</config>
